@@ -1,0 +1,6 @@
+.workshop-app__dashboard {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 12px;
+}

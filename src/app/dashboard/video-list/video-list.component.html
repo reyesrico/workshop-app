@@ -1,0 +1,11 @@
+<div class="workshop-app__video-list">
+  <div *ngFor="let video of videos; last as last"
+    class="preview"
+    [class.selected]="selectedVideo === video"
+  >
+    <a (click)="selectVideo(video)">
+      <app-video-item [video]="video"></app-video-item>
+    </a>
+    <hr *ngIf="!last">
+  </div>
+</div>

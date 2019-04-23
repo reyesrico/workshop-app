@@ -1,0 +1,8 @@
+.workshop-app__video-list {
+  background-color: lightgrey;
+}
+
+.selected {
+  background-color: rebeccapurple;
+  color: white;
+}

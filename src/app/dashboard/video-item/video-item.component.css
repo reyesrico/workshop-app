@@ -1,0 +1,8 @@
+.worshop-app__video-item .preview {
+  padding: 5px;
+  margin: 5px;
+}
+
+.worshop-app__video-item img {
+  width: 250px;
+}
