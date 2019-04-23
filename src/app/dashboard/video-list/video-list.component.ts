@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, Input, OnChanges, Output, EventEmitter } from '@angular/core';
 import { Video } from '../interfaces';
 
 @Component({
@@ -6,15 +6,15 @@ import { Video } from '../interfaces';
   templateUrl: './video-list.component.html',
   styleUrls: ['./video-list.component.css']
 })
-export class VideoListComponent implements OnInit {
+export class VideoListComponent implements OnChanges {
   @Input() videos: Video[];
   @Output() videoSelected = new EventEmitter<Video>();
   selectedVideo?: Video;
 
   constructor() { }
 
-  ngOnInit() {
-    this.selectedVideo = this.videos[0];
+  ngOnChanges() {
+    this.selectVideo(this.videos[1]);
   }
 
   selectVideo(video: Video) {
