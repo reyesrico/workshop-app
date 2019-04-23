@@ -1,5 +1,15 @@
 <div class="workshop-app__dashboard">
-  <app-video-list [videos]="videos"></app-video-list>
-  <app-video-player></app-video-player>
-  <app-stat-filters></app-stat-filters>
+  <app-video-list
+    [videos]="videos"
+    (videoSelected)="selectedVideo = $event"
+  >
+  </app-video-list>
+
+  <app-video-player
+    [video]="selectedVideo"
+  >
+  </app-video-player>
+
+  <app-stat-filters>
+  </app-stat-filters>
 </div>

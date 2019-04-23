@@ -10,6 +10,7 @@ import { Video } from '../interfaces';
 export class VideoDashboardComponent implements OnInit {
 
   videos: Video[] = videoList;
+  selectedVideo: Video = this.videos[0];
 
   constructor() { }
 
