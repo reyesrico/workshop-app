@@ -14,7 +14,9 @@ export class VideoListComponent implements OnChanges {
   constructor() { }
 
   ngOnChanges() {
-    this.selectVideo(this.videos[1]);
+    if (this.videos && this.videos.length > 0) {
+      this.selectVideo(this.videos[1]);
+    }
   }
 
   selectVideo(video: Video) {

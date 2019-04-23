@@ -1,6 +1,6 @@
 <div class="workshop-app__dashboard">
   <app-video-list
-    [videos]="videos"
+    [videos]="videos | async"
     (videoSelected)="selectedVideo = $event"
   >
   </app-video-list>
