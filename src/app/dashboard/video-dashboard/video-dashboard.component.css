@@ -1,6 +1,7 @@
 .workshop-app__dashboard {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
   font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
   font-size: 12px;
+  grid-gap: 16px;
+  grid-template-columns: repeat(3, 1fr);
 }
