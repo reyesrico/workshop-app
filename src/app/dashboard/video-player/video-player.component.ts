@@ -1,5 +1,9 @@
+import { Observable } from 'rxjs';
 import { Component, OnInit, Input } from '@angular/core';
 import { Video } from '../interfaces';
+import { ActivatedRoute } from '@angular/router';
+import { filter, map, switchMap } from 'rxjs/operators';
+import { VideoDataService } from '../video-data.service';
 
 @Component({
   selector: 'app-video-player',
@@ -7,9 +11,15 @@ import { Video } from '../interfaces';
   styleUrls: ['./video-player.component.css']
 })
 export class VideoPlayerComponent implements OnInit {
-  @Input() video: Video;
+  video: Observable<Video>;
 
-  constructor() { }
+  constructor(ar: ActivatedRoute, svc: VideoDataService) {
+    this.video = ar.queryParams.pipe(
+      map(params => params.selectedVideoId),
+      filter(id => id),
+      switchMap(id => svc.getVideo(id)),
+    );
+   }
 
   ngOnInit() {
   }

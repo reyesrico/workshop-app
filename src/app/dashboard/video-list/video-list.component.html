@@ -1,9 +1,14 @@
 <div class="workshop-app__video-list">
-  <div *ngFor="let video of videos; last as last"
+  <div
+    *ngFor="let video of videos; last as last"
     class="preview"
-    [class.selected]="selectedVideo === video"
+    [class.selected]="(selectedVideoId | async) === video.id"
   >
-    <a (click)="selectVideo(video)">
+    <a
+      class="link"
+      [routerLink]=""
+      [queryParams]="{ selectedVideoId: video.id }"
+    >
       <app-video-item [video]="video"></app-video-item>
     </a>
     <hr *ngIf="!last">

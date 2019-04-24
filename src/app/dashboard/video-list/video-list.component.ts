@@ -1,26 +1,21 @@
-import { Component, Input, OnChanges, Output, EventEmitter } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Observable } from 'rxjs';
+import { Component, Input } from '@angular/core';
 import { Video } from '../interfaces';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-video-list',
   templateUrl: './video-list.component.html',
   styleUrls: ['./video-list.component.css']
 })
-export class VideoListComponent implements OnChanges {
+export class VideoListComponent {
   @Input() videos: Video[];
-  @Output() videoSelected = new EventEmitter<Video>();
-  selectedVideo?: Video;
+  selectedVideoId: Observable<string>;
 
-  constructor() { }
-
-  ngOnChanges() {
-    if (this.videos && this.videos.length > 0) {
-      this.selectVideo(this.videos[1]);
-    }
-  }
-
-  selectVideo(video: Video) {
-    this.selectedVideo = video;
-    this.videoSelected.emit(video);
-  }
+  constructor(ar: ActivatedRoute) {
+    this.selectedVideoId = ar.queryParams.pipe(
+      map(params => params.selectedVideoId)
+    );
+   }
 }

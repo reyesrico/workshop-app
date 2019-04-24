@@ -2,7 +2,15 @@
   background-color: lightgrey;
 }
 
+.link {
+  text-decoration: none;
+  color: black;
+}
+
 .selected {
   background-color: rebeccapurple;
+}
+
+.selected .link {
   color: white;
 }

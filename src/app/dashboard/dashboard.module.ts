@@ -11,6 +11,7 @@ import { VideoItemComponent } from './video-item/video-item.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', component: VideoDashboardComponent },
+  { path: ':videoId', component: VideoPlayerComponent },
 ];
 
 @NgModule({

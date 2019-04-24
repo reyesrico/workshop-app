@@ -14,9 +14,10 @@ export class VideoDataService {
   constructor(private http: HttpClient) { }
 
   loadVideos(): Observable<Video[]> {
-    return this.http.get<Video[]>(apiUrl + '/videos')
-    .pipe(
-      map(videos => videos.filter(video => video.title.startsWith('Angular')))
-    );
+    return this.http.get<Video[]>(apiUrl + '/videos');
+  }
+
+  getVideo(id: number): Observable<Video> {
+    return this.http.get<Video>(apiUrl + '/videos/' + id);
   }
 }
