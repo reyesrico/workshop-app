@@ -1,3 +1,17 @@
-<p>
-  stat-filters works!
-</p>
+<div>
+  <h5>Search</h5>
+
+  <form [formGroup]="search" (ngSumbit)="submit()">
+    <label for="title">Title</label>
+    <input id="title" formControlName="title">
+    <hr>
+    <label for="author">Video</label>
+    <input id="author" formControlName="author">
+    <hr>
+    <button [disabled]="!search.valid">Submit</button>
+  </form>
+
+  <pre>{{ search.value | json }}</pre>
+  Valid: <pre>{{ search.valid | json }}</pre>
+  Title Valid: <pre>{{search.get('title').valid }}</pre>
+</div>
