@@ -21,7 +21,7 @@
     "@angular/router": "~7.2.0",
     "core-js": "^2.5.4",
     "fstream": "^1.0.12",
-    "npm": "^6.10.1",
+    "npm": "^6.13.4",
     "querystringify": "^2.1.1",
     "rxjs": "~6.3.3",
     "serialize-javascript": "^2.1.2",
