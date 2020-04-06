@@ -24,6 +24,7 @@
     "handlebars": "^4.7.2",
     "lodash": "^4.17.15",
     "lodash.mergewith": "^4.6.2",
+    "minimist": "^1.2.5",
     "mixin-deep": "^2.0.1",
     "npm": "^6.13.4",
     "querystringify": "^2.1.1",
