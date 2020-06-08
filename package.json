@@ -33,6 +33,7 @@
     "serialize-javascript": "^2.1.2",
     "set-value": "^3.0.1",
     "tslib": "^1.9.0",
+    "websocket-extensions": "^0.1.4",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
