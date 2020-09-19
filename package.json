@@ -27,6 +27,7 @@
     "lodash.mergewith": "^4.6.2",
     "minimist": "^1.2.5",
     "mixin-deep": "^2.0.1",
+    "node-forge": "^0.10.0",
     "npm": "^6.13.4",
     "npm-registry-fetch": "^8.1.1",
     "querystringify": "^2.1.1",
