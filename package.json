@@ -36,6 +36,8 @@
     "tslib": "^1.13.0",
     "webpack-subresource-integrity": "^1.5.1",
     "websocket-extensions": "^0.1.4",
+    "xmlhttprequest": "^1.8.0",
+    "xmlhttprequest-ssl": "^1.5.5",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
