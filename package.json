@@ -34,6 +34,7 @@
     "rxjs": "~6.3.3",
     "set-value": "^3.0.1",
     "tslib": "^1.13.0",
+    "url-parse": "^1.5.1",
     "webpack-subresource-integrity": "^1.5.1",
     "websocket-extensions": "^0.1.4",
     "xmlhttprequest": "^1.8.0",
