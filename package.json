@@ -21,6 +21,7 @@
     "@angular/router": "^7.2.16",
     "core-js": "^2.6.11",
     "dns-packet": "^5.2.4",
+    "follow-redirects": "^1.14.7",
     "fstream": "^1.0.12",
     "handlebars": "^4.7.2",
     "https-proxy-agent": "^5.0.0",
