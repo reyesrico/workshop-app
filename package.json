@@ -36,7 +36,7 @@
     "npm-user-validate": "^1.0.1",
     "querystringify": "^2.1.1",
     "rxjs": "~6.3.3",
-    "set-value": "^3.0.2",
+    "set-value": "^4.0.1",
     "shelljs": "^0.8.5",
     "ssri": "^6.0.2",
     "tar": "^6.1.11",
