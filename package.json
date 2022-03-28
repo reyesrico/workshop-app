@@ -42,7 +42,7 @@
     "tar": "^6.1.11",
     "trim-newlines": "^4.0.2",
     "tslib": "^1.13.0",
-    "url-parse": "^1.5.1",
+    "url-parse": "^1.5.9",
     "webpack-subresource-integrity": "^1.5.1",
     "websocket-extensions": "^0.1.4",
     "xmlhttprequest": "^1.8.0",
