@@ -7,15 +7,16 @@ import { map } from 'rxjs/operators';
 @Component({
   selector: 'app-video-list',
   templateUrl: './video-list.component.html',
-  styleUrls: ['./video-list.component.css']
+  styleUrls: ['./video-list.component.css'],
+  standalone: false
 })
 export class VideoListComponent {
-  @Input() videos: Video[];
+  @Input() videos: Video[] = [];
   selectedVideoId: Observable<string>;
 
   constructor(ar: ActivatedRoute) {
     this.selectedVideoId = ar.queryParams.pipe(
-      map(params => params.selectedVideoId)
+      map(params => params['selectedVideoId'])
     );
    }
 }

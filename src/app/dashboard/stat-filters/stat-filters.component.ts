@@ -4,7 +4,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 @Component({
   selector: 'app-stat-filters',
   templateUrl: './stat-filters.component.html',
-  styleUrls: ['./stat-filters.component.css']
+  styleUrls: ['./stat-filters.component.css'],
+  standalone: false
 })
 export class StatFiltersComponent implements OnInit {
   search: FormGroup;
