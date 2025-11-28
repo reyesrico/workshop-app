@@ -1,6 +1,6 @@
 <div class="workshop-app__dashboard">
   <app-video-list
-    [videos]="videos | async"
+    [videos]="(videos | async) ?? []"
   >
   </app-video-list>
 

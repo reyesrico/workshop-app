@@ -12,5 +12,5 @@
 
   <pre>{{ search.value | json }}</pre>
   Valid: <pre>{{ search.valid | json }}</pre>
-  Title Valid: <pre>{{search.get('title').valid }}</pre>
+  Title Valid: <pre>{{search.get('title')?.valid }}</pre>
 </div>

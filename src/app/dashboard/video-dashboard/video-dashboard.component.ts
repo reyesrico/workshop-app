@@ -8,18 +8,19 @@ import { map, tap } from 'rxjs/operators';
 @Component({
   selector: 'app-video-dashboard',
   templateUrl: './video-dashboard.component.html',
-  styleUrls: ['./video-dashboard.component.css']
+  styleUrls: ['./video-dashboard.component.css'],
+  standalone: false
 })
 export class VideoDashboardComponent implements OnInit {
   videos: Observable<Video[]>;
-  selectedVideo: Video;
+  selectedVideo?: Video;
 
   constructor(svc: VideoDataService, ar: ActivatedRoute, router: Router) {
     const id$: Observable<string> = ar.queryParams.pipe(
-      map(params => params.selectedVideoId)
+      map(params => params['selectedVideoId'])
     );
 
-    this.videos = combineLatest(svc.loadVideos(), id$).pipe(
+    this.videos = combineLatest([svc.loadVideos(), id$]).pipe(
       tap(([videos, id]) => {
         if (!id) {
           router.navigate([], {
@@ -27,7 +28,7 @@ export class VideoDashboardComponent implements OnInit {
           });
         }
       }),
-      map(([videos, id]) => videos)
+      map(([videos]) => videos)
     );
   }
 
