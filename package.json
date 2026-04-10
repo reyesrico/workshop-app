@@ -5,51 +5,25 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint"
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^19.2.20",
-    "@angular/common": "^19.2.20",
-    "@angular/compiler": "^19.2.20",
-    "@angular/core": "^19.2.20",
-    "@angular/forms": "^19.2.20",
-    "@angular/platform-browser": "^19.2.20",
-    "@angular/platform-browser-dynamic": "^19.2.20",
-    "@angular/router": "^19.2.20",
-    "dns-packet": "^5.2.4",
-    "dot-prop": "^7.2.0",
-    "follow-redirects": "^1.14.7",
-    "fstream": "^1.0.12",
-    "handlebars": "^4.7.9",
-    "https-proxy-agent": "^5.0.0",
-    "lodash": "^4.18.1",
-    "lodash.mergewith": "^4.6.2",
-    "minimist": "^1.2.5",
-    "mixin-deep": "^2.0.1",
-    "node-forge": "^1.4.0",
-    "npm-registry-fetch": "^8.1.1",
-    "npm-user-validate": "^1.0.1",
-    "querystringify": "^2.1.1",
+    "@angular/common": "^21.2.8",
+    "@angular/compiler": "^21.2.8",
+    "@angular/core": "^21.2.8",
+    "@angular/forms": "^21.2.8",
+    "@angular/platform-browser": "^21.2.8",
+    "@angular/platform-browser-dynamic": "^21.2.8",
+    "@angular/router": "^21.2.8",
     "rxjs": "^7.8.1",
-    "set-value": "^3.0.2",
-    "shelljs": "^0.8.5",
-    "ssri": "^6.0.2",
-    "tar": "^7.5.11",
-    "trim-newlines": "^4.0.2",
     "tslib": "^2.8.1",
-    "url-parse": "^1.5.1",
-    "webpack-subresource-integrity": "^1.5.1",
-    "websocket-extensions": "^0.1.4",
-    "xmlhttprequest": "^1.8.0",
-    "xmlhttprequest-ssl": "^1.5.5",
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^21.2.6",
-    "@angular/cli": "^19.2.23",
-    "@angular/compiler-cli": "^19.2.20",
+    "@angular-devkit/build-angular": "^21.2.7",
+    "@angular/cli": "^21.2.7",
+    "@angular/compiler-cli": "^21.2.8",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^22.0.0",
     "jasmine-core": "~5.1.0",
@@ -58,22 +32,19 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.6.3"
+    "typescript": "~5.9.3"
   },
   "overrides": {
-    "tar": "^7.5.11",
     "rollup": "^4.59.0",
     "serialize-javascript": "^7.0.5",
     "immutable": "^5.1.5",
-    "minimatch": "^9.0.7",
-    "glob": {
-      "minimatch": "^3.1.5"
-    },
     "karma": {
-      "minimatch": "^3.1.5"
+      "minimatch": "^3.1.5",
+      "brace-expansion": "1.1.13"
     },
     "karma-coverage": {
-      "minimatch": "^3.1.5"
+      "minimatch": "^3.1.5",
+      "brace-expansion": "1.1.13"
     }
   }
 }
