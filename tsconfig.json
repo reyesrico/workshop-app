@@ -32,5 +32,8 @@
   "exclude": [
     "e2e",
     "node_modules"
+  ],
+  "references": [
+    { "path": "./src/tsconfig.spec.json" }
   ]
 }
