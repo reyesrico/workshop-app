@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-stat-filters',
   templateUrl: './stat-filters.component.html',
   styleUrls: ['./stat-filters.component.css'],
-  standalone: false
+  standalone: true,
+  imports: [ReactiveFormsModule, CommonModule],
 })
 export class StatFiltersComponent implements OnInit {
   search: FormGroup;

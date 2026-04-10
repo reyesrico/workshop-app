@@ -1,5 +1,6 @@
 import { Observable } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { Video } from '../interfaces';
 import { ActivatedRoute } from '@angular/router';
 import { filter, map, switchMap } from 'rxjs/operators';
@@ -9,7 +10,8 @@ import { VideoDataService } from '../video-data.service';
   selector: 'app-video-player',
   templateUrl: './video-player.component.html',
   styleUrls: ['./video-player.component.css'],
-  standalone: false
+  standalone: true,
+  imports: [CommonModule],
 })
 export class VideoPlayerComponent implements OnInit {
   video: Observable<Video>;
