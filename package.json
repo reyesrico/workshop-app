@@ -42,6 +42,7 @@
     "esbuild": "^0.28.1",
     "@babel/core": "^7.29.6",
     "postcss": "^8.5.18",
-    "shell-quote": "^1.9.0"
+    "shell-quote": "^1.9.0",
+    "@hono/node-server": "^2.0.5"
   }
 }
