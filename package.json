@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^21.2.7",
-    "@angular/cli": "^21.2.26",
+    "@angular/cli": "^22.2.3",
     "@angular/compiler-cli": "^21.2.25",
     "@types/node": "^22.0.0",
     "happy-dom": "^20.8.9",
