@@ -7,6 +7,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Use Node.js 20.19 or a newer Angular 21-supported release. From the repository root,
 run `npm ci` to install the exact dependency versions in `package-lock.json`.
 
+Vitest requires version 4.1.12 or newer to include the fixes for
+CVE-2026-112949 and CVE-2026-112950 in `@vitest/mocker`. The
+`@modelcontextprotocol/sdk` override keeps Angular CLI's pinned transitive
+dependency on a patched release for CVE-2026-111771. Keep these constraints when
+refreshing the lockfile.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
