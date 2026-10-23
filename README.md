@@ -13,6 +13,17 @@ CVE-2026-112949 and CVE-2026-112950 in `@vitest/mocker`. The
 dependency on a patched release for CVE-2026-111771. Keep these constraints when
 refreshing the lockfile.
 
+The SockJS-scoped `uuid` override pins 11.1.1, the first release fixing
+GHSA-w5hq-g745-h8pq. It retains the CommonJS `require('uuid').v4()` API used by
+SockJS; UUID 12 and newer are ESM-only. This fixes the Angular build tooling's
+webpack-dev-server dependency chain without upgrading Angular or changing
+builders. Keep the override until SockJS updates its UUID dependency or the
+legacy webpack tooling is removed. The lockfile also keeps `ip-address` at
+10.7.4 or newer to fix GHSA-rxp7-6hxx-x8q5.
+
+Validate dependency updates with `npm ci`, `npm run build`,
+`npm test -- --watch=false`, and `npm audit`.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

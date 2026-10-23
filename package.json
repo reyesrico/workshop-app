@@ -35,6 +35,9 @@
     "glob": "^13.0.6",
     "rimraf": "^6.0.1",
     "webpack-dev-server": "^5.2.6",
+    "sockjs": {
+      "uuid": "11.1.1"
+    },
     "undici": "^7.28.0",
     "http-proxy-middleware": "^3.0.7",
     "piscina": "^5.2.0",
