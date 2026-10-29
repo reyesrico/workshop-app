@@ -30,7 +30,7 @@
   },
   "overrides": {
     "rollup": "^4.59.0",
-    "serialize-javascript": "^7.0.5",
+    "serialize-javascript": "^7.1.4",
     "immutable": "^5.1.5",
     "glob": "^13.0.6",
     "rimraf": "^6.0.1",
